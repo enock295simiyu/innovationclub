@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.shortcuts import reverse
 
 
+
 class Leader(models.Model):
     name = models.ForeignKey(User,on_delete=models.CASCADE)
     course = models.CharField(max_length=100)
